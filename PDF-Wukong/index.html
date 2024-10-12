@@ -148,16 +148,6 @@
                     <span>Video</span>
                   </a> -->
           </span>
-          <!-- Code Link. -->
-          <!-- <span class="link-block">
-                  <a href="https://github.com/VITA-Group/Instantsplat"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span> -->
         </div>
 
       </div>
@@ -168,29 +158,6 @@
   </section>
 
 <hr>
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Video</h2>
-          <div class="publication-video">
-            <iframe src="https://www.youtube.com/embed/UuL2nP5rJcI?rel=0&showinfo=0"
-                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-      <!-- <video id="teaser" autoplay controls loop playsinline height="100%"> -->
-        <!-- <source src="static/myvideos/supp-video.mp4" type="video/mp4" /> -->
-      <!-- </video> -->
-      <h2 class="subtitle has-text-justified">
-        <b>PDF-Wukong</b> is a Large Multimodal Model for Efficient Long PDF Reading with End-to-End Sparse Sampling.
-      </h2>
-    </div>
-  </div>
-</section>
-  
-
 
   <section class="section">
     <div class="container is-max-desktop">
@@ -201,7 +168,19 @@
           <div class="content has-text-justified">
             <img src="./static/images/abstract.jpg">
             <p>
-              Document understanding is a challenging task to process and comprehend large amounts of textual and visual information. Recent advances in Large Language Models (LLMs) have significantly improved the performance of this task. However, existing methods typically focus on either plain text or a limited number of document images, struggling to handle long PDF documents with interleaved text and images, especially in academic papers. In this paper, we introduce PDF-WuKong, a multimodal large language model (MLLM) which is designed to enhance multimodal question-answering (QA) for long PDF documents. PDFWuKong incorporates a sparse sampler that operates on both text and image representations, significantly improving the efficiency and capability of the MLLM. The sparse sampler is integrated with the MLLM’s image encoder and selects the paragraphs or diagrams most pertinent to user queries for processing by the language model. To effectively train and evaluate our model, we construct PaperPDF, a dataset consisting of a broad collection of academic papers sourced from arXiv, multiple strategies are proposed to generate automatically 1M QA pairs along with their corresponding evidence sources. Experimental results demonstrate the superiority and high efficiency of our approach over other models on the task of long multimodal PDF understanding, surpassing proprietary products by an average of 8.6% on F1. Our code and dataset will be released at https://github.com/yh-hust/PDF-Wukong.
+              Document understanding is a challenging task to process and comprehend large amounts of textual and visual information. 
+              Recent advances in Large Language Models (LLMs) have significantly improved the performance of this task. 
+              However, existing methods typically focus on either plain text or a limited number of document images, 
+              struggling to handle long PDF documents with interleaved text and images, especially in academic papers. 
+              In this paper, we introduce <strong>PDF-Wukong</strong>, a multimodal large language model (MLLM) which is designed to 
+              enhance multimodal question-answering (QA) for long PDF documents. PDFWuKong incorporates a sparse sampler that 
+              operates on both text and image representations, significantly improving the efficiency and capability of the MLLM. 
+              The sparse sampler is integrated with the MLLM’s image encoder and selects the paragraphs or diagrams most pertinent 
+              to user queries for processing by the language model. To effectively train and evaluate our model, we construct <strong>PaperPDF</strong>, 
+              a dataset consisting of a broad collection of academic papers sourced from arXiv, multiple strategies are proposed 
+              to generate automatically 1M QA pairs along with their corresponding evidence sources. Experimental results demonstrate 
+              the superiority and high efficiency of our approach over other models on the task of long multimodal PDF understanding, 
+              surpassing proprietary products by an average of 8.6% on F1. Our code and dataset will be released at https://github.com/yh-hust/PDF-Wukong.
             </p>
           </div>
         </div>
