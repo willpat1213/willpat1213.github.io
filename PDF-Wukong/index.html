@@ -24,6 +24,9 @@
   <script>
     window.dataLayer = window.dataLayer || [];
 
+  <script type="text/javascript" async
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
     function gtag() {
       dataLayer.push(arguments);
     }
@@ -214,6 +217,35 @@
 
     </div>
 
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Concurrent Work. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          
+          <h2 class="title is-3">PaperPDF Construction</h2>
+          <div class="content has-text-justified">
+            <img src="./static/images/data_gen.jpg">
+            <p><strong>The construction process of PaperPDF</strong>. It can be divided into four steps: structured parsing, 
+              rule-based extraction, prompt construction, and filtering. We obtained 89k PDF documents from the arXiv repository as our document set \( \mathbb{D} \). 
+              For each document \( D \) in \( \mathbb{D} \), we first employed Grobid to parse the document and extract its text chunks \( \{T_{1}, T_{2}, 
+              \ldots, T_{m}\} \) and images chunks \( \{I_{1}, I_{2}, \ldots, I_{n}\} \). Subsequently, predefined rules are used to randomly select chunks from the document, 
+              which may consist of text chunks \( T_{i} \), chart chunks \( I_{j} \) or a combination of both. 
+              The selected chunks will be input into commercial MLLM products according to different prompt templates and then, 
+              the question \( Q \) related to the input chunks, along with the corresponding answer \( A \), is subsequently generated. 
+              Notably, For the training set, we used Gemini for generation due to its free and rapid accessibility, 
+              while the high-performance GPT-4V was employed to construct the test set, ensuring the validity and robustness of the evaluation. 
+              Finally, we devise a set of rules to filter the generated training and testing sets automatically. 
+              The removing rules for the samples include too-short questions, too-long answers, non-English text, etc. 
+              Further manual checking is conducted on test set to ensure the reliability of the evaluation. 
+              PaperPDF consists of two types of QA pairs: <strong>Single-evidence</strong> and <strong>Multi-evidence</strong></p>
+          </div>
+        </div>
+      </div>
+      <!--/ Concurrent Work. -->
+
+    </div>
+    
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -230,9 +262,8 @@
   </div>
 </section>
 
-<section class="section">
+<!-- <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">More Examples</h2>
@@ -244,11 +275,10 @@
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
   </div>
   </div>
-</section>
-    
+</section> -->
+
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
